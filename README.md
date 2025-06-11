@@ -34,6 +34,3 @@ This project is released under the MIT license.
 # Contact us📞
 If you have any questions or feedback, you can contact us via email.
 tahanahadi@outlook.com
-
-# Usage License⚠️
-Any improper or commercial use or sale is not permitted.
