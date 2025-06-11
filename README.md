@@ -14,7 +14,7 @@ VCM Packer (VCM Tool) is a practical and secure tool for packing and unpacking f
 
 # Preview📸
 ![VCM Packer Screenshot 1](screenshot1.jpg)
-![VCM Packer Video 1](video1.gif)
+![VCM Packer Screenshot 1](video1.gif)
 (sorry for bad video🙏🏼)
 
 # Install and Run🛠️
