@@ -13,6 +13,7 @@ VCM Packer (VCM Tool) is a practical and secure tool for packing and unpacking f
 * Standalone executable file: Can be run directly on Windows without the need to install Python and its libraries.
 
 # Preview📸
+![VCM Packer Screenshot 1](screenshot1.jpg)
 
 # Install and Run🛠️
 First, download the file from Release. Unzip it and run VCM Packer.exe .
