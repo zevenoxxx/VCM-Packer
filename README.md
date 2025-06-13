@@ -1,5 +1,5 @@
 # VCM Packer✨
-VCM Packer (VCM Tool) is a practical and secure tool for packing and unpacking files. This program allows you to secure your sensitive data in .vcm format using strong encryption. With a simple and user-friendly graphical user interface (GUI) based on Tkinter, it provides a secure experience for managing encrypted data.
+VCM Packer (Vaulted Content Manager) is a practical and secure tool for packing and unpacking files. This program allows you to secure your sensitive data in .vcm format using strong encryption. With a simple and user-friendly graphical user interface (GUI) based on Tkinter, it provides a secure experience for managing encrypted data.
 
 # Outstanding security features🛡️
 * Strong encryption: Uses the Fernet algorithm (based on AES-128 in CBC mode and HMAC-SHA256) to encrypt data.
