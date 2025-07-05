@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCM Packer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>VCM Packer <span class="tagline">Vaulted Content Manager</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#security">Security</a></li>
+                    <li><a href="#install">Install</a></li>
+                    <li><a href="download.html">Download</a></li>
+                    <li><a href="#participation">Participation</a></li>
+                    <li><a href="#license">License</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="features" class="container">
+            <h2>Outstanding features</h2>
+            <div class="feature-item">
+                <h3>Folder packaging</h3>
+                <p>Encrypts folders along with all their files and subfolders and packages them into a single file with the .vcm format.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Folder unpacking (VCM Unpack)</h3>
+                <p>Decrypts the contents of .vcm files by entering the correct password and opens them in your desired location.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Graphical User Interface (GUI)</h3>
+                <p>Easy to use with clear buttons and input boxes.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Standalone executable file</h3>
+                <p>Can be run directly on Windows without the need to install Python and its libraries.</p>
+            </div>
+        </section>
+
+        <section id="security" class="container">
+            <h2>Security Features</h2>
+            <div class="security-item">
+                <h3>Strong encryption</h3>
+                <p>It uses the Fernet algorithm (based on AES-128 in CBC mode and HMAC-SHA256) to encrypt data.</p>
+            </div>
+            <div class="security-item">
+                <h3>Secure key extraction</h3>
+                <p>The encryption key is derived from the user's password using PBKDF2HMAC and a random Salt, which is highly resistant to Brute-Force and Dictionary attacks.</p>
+            </div>
+            <div class="security-item">
+                <h3>Metadata encryption</h3>
+                <p>All file details (name, paths) are also encrypted so that confidential information in the .vcm file is not revealed.</p>
+            </div>
+        </section>
+
+        <section id="install" class="container">
+            <h2>Install and Run</h2>
+            <p>First, download the file from the <a href="https://github.com/zevenoxxx/VCM-Packer/releases" target="_blank">Releases</a> section. Unzip it and run the <code>VCM Packer.exe</code> file.</p>
+            <div class="note-warning">
+                <p>⚠️ **Note:** Some antiviruses may misidentify this file as malware, due to the nature of Python file packaging and the program's interaction with the file system and clipboard. This behavior is normal for compiled Python programs. If you see such a message, please add the file to your Whitelist.</p>
+            </div>
+        </section>
+        
+        <section id="participation" class="container">
+            <h2>Participation</h2>
+            <p>We welcome any contributions, bug reports, or suggestions for improvement!</p>
+            <ul>
+                <li>**Bug Report:** Report issues in the <a href="https://github.com/zevenoxxx/VCM-Packer/issues" target="_blank">GitHub Issues</a> section.</li>
+                <li>**Feature suggestion:** Also submit new ideas in the <a href="https://github.com/zevenoxxx/VCM-Packer/issues" target="_blank">Issues</a> section.</li>
+                <li>**Contribute to the code:** To contribute directly to the code, please read the <a href="https://github.com/zevenoxxx/VCM-Packer/blob/main/CONTRIBUTING.md" target="_blank">Contribution Guide</a> and submit your Pull Request.</li>
+            </ul>
+        </section>
+
+        <section id="license" class="container">
+            <h2>License</h2>
+            <p>This project is released under the MIT license.</p>
+            <p>For more details, please see the <a href="https://github.com/zevenoxxx/VCM-Packer/blob/main/LICENSE" target="_blank">LICENSE</a> file.</p>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, you can contact us via email:</p>
+            <p><a href="mailto:tahanahadi@outlook.com">tahanahadi@outlook.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 VCM Packer. Published under the MIT License.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+/* Basic Styles - For overall page appearance */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern and clean font stack */
+    line-height: 1.6; /* Improved readability for paragraphs */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    background-color: #f4f7f6; /* Light background for the page */
+    color: #333; /* Dark gray text color */
+}
+
+/* Container for responsive layout */
+.container {
+    width: 90%; /* Occupy 90% of screen width */
+    max-width: 1000px; /* Maximum width to prevent content from stretching too wide */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px 0; /* Vertical padding inside the container */
+}
+
+/* Header Styles - Top section of the website */
+header {
+    background-color: #2c3e50; /* Dark blue/gray background for header */
+    color: #ecf0f1; /* Light text color for header */
+    padding: 2rem 0; /* Top and bottom padding for the header */
+    text-align: center; /* Center align text within the header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin: 0; /* Remove default margin for h1 */
+    font-size: 2.8rem; /* Large font size for main title */
+    letter-spacing: 1px; /* Slightly increased letter spacing for style */
+    animation: fadeInDown 1s ease-out; /* Animation for title */
+}
+
+.tagline {
+    font-size: 1.2rem; /* Smaller font for the tagline */
+    display: block; /* Make it a block element to appear on a new line */
+    margin-top: 10px; /* Space above tagline */
+    color: #bdc3c7; /* Lighter gray for tagline */
+    animation: fadeInUp 1s ease-out; /* Animation for tagline */
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none; /* Removes default bullet points from list */
+    padding: 0; /* Removes default padding from list */
+    margin: 20px 0 0; /* Adds top margin to separate from title, removes bottom margin */
+    display: flex; /* Uses Flexbox for horizontal alignment of list items */
+    justify-content: center; /* Centers the list items horizontally */
+    flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+}
+
+nav ul li {
+    margin: 0 15px; /* Adds horizontal spacing between navigation items */
+}
+
+nav ul li a {
+    color: #ecf0f1; /* Sets text color for navigation links (light gray) */
+    text-decoration: none; /* Removes underline from links */
+    font-weight: bold; /* Makes link text bold */
+    padding: 8px 15px; /* Adds padding around link text, making them easier to click */
+    border-radius: 5px; /* Slightly rounded corners for the link background on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+nav ul li a:hover {
+    background-color: #3498db; /* Blue background on hover */
+    color: white; /* White text color on hover */
+}
+
+
+/* Main Content Section Styles */
+main section {
+    padding: 40px 0; /* Top and bottom padding for each main section */
+    border-bottom: 1px solid #e0e0e0; /* Separator line between sections */
+    opacity: 0; /* Initially hide sections for scroll animation */
+    transform: translateY(20px); /* Slightly move down for scroll animation */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Smooth transition for animation */
+}
+
+main section:last-child {
+    border-bottom: none; /* No border for the last section */
+}
+
+/* Headings within sections */
+main h2 {
+    font-size: 2.2rem; /* Font size for section headings */
+    color: #34495e; /* Darker blue/gray for section headings */
+    text-align: center; /* Center align section headings */
+    margin-bottom: 30px; /* Space below section headings */
+    position: relative; /* Needed for pseudo-element underline */
+    padding-bottom: 10px; /* Space for the underline */
+}
+
+main h2::after {
+    content: ''; /* Required for pseudo-element */
+    display: block; /* Make it a block element */
+    width: 60px; /* Width of the underline */
+    height: 3px; /* Height of the underline */
+    background-color: #3498db; /* Blue color for the underline */
+    margin: 10px auto 0; /* Center the underline below the heading */
+    border-radius: 2px; /* Slightly rounded corners for the underline */
+}
+
+/* Specific Feature and Security Item Styling */
+.feature-item, .security-item {
+    background-color: #fff; /* White background for items */
+    padding: 20px; /* Padding inside items */
+    margin-bottom: 20px; /* Space between items */
+    border-radius: 8px; /* Rounded corners for items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.feature-item:hover, .security-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.feature-item h3, .security-item h3 {
+    color: #2980b9; /* Blue color for item headings */
+    font-size: 1.5rem; /* Font size for item headings */
+    margin-top: 0; /* Remove top margin */
+}
+
+/* Install Section Specifics */
+#install p {
+    text-align: center; /* Center align text in install section */
+    font-size: 1.1rem; /* Slightly larger font for readability */
+}
+
+#install code {
+    background-color: #e8e8e8; /* Light gray background for code snippets */
+    padding: 2px 6px; /* Padding around code */
+    border-radius: 4px; /* Rounded corners for code */
+    font-family: 'Consolas', 'Courier New', monospace; /* Monospaced font for code */
+}
+
+.note-warning {
+    background-color: #fff3cd; /* Light yellow background for warning note */
+    border-left: 5px solid #ffc107; /* Orange left border for warning */
+    padding: 15px; /* Padding inside the warning box */
+    margin-top: 20px; /* Space above warning box */
+    border-radius: 4px; /* Rounded corners */
+    color: #664d03; /* Dark yellow text color */
+}
+
+.note-warning p {
+    margin: 0; /* Remove default paragraph margin */
+    text-align: left; /* Align text to left */
+}
+
+/* Download Button Styles (shared with download.html) */
+.btn-download {
+    display: inline-block; /* Make button behave like a block but allow other elements on same line */
+    background-color: #28a745; /* Green background for download button */
+    color: white; /* White text color */
+    padding: 12px 25px; /* Padding inside button */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 50px; /* Heavily rounded corners for pill shape */
+    font-size: 1.2rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.btn-download:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+/* Release Notes Button Style (newly added for download.html) */
+.btn-release-notes {
+    display: inline-block;
+    background-color: #3498db; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px; /* Pill shape */
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px; /* Space from download button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-release-notes:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+
+/* Participation Section Specifics */
+#participation ul {
+    list-style: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center align list items */
+}
+
+#participation li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.1rem; /* Slightly larger font */
+}
+
+#participation a {
+    color: #3498db; /* Blue link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+#participation a:hover {
+    color: #2980b9; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #34495e; /* Darker blue/gray background for footer */
+    color: #ecf0f1; /* Light text color */
+    text-align: center; /* Center align text */
+    padding: 1.5rem 0; /* Padding for footer */
+    font-size: 0.9rem; /* Smaller font size */
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* Adjust header font size for smaller screens */
+    }
+
+    .tagline {
+        font-size: 1rem; /* Adjust tagline font size */
+    }
+
+    main h2 {
+        font-size: 1.8rem; /* Adjust section heading font size */
+    }
+
+    .feature-item, .security-item {
+        padding: 15px; /* Reduce padding for items */
+    }
+
+    .btn-download, .btn-release-notes {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 10px 20px; /* Adjust button padding */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stacks navigation items vertically on small screens */
+        align-items: center; /* Centers items when stacked vertically */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjusts vertical spacing for stacked items */
+    }
+}
+
+/* Scroll Animation with JavaScript (handled by script.js) */
+/* The initial opacity and transform are set in main section styles above */
+/* The 'fade-in' class will be added by JavaScript */
+.fade-in {
+    opacity: 1 !important; /* Force opacity to 1 when class is added */
+    transform: translateY(0) !important; /* Reset transform when class is added */
+}
+
+/* Styles for the Downloads Page */
+#downloads-page .intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.version-section {
+    margin-bottom: 60px;
+}
+
+.version-section h3 {
+    font-size: 2rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.version-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 0 auto 30px auto; /* Center card and add space below */
+    max-width: 600px; /* Limit card width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.version-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.version-card h4 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.version-card .release-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.version-card .btn-download {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Release Notes specific styles (removed details/summary styling as they are now external links) */
+/* Old details/summary styles are commented out or replaced by btn-release-notes */
